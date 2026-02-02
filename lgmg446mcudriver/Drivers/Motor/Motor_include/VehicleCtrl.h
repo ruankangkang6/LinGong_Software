@@ -116,6 +116,7 @@ void VehicleCtrlTboxBind​(void);
 uint8_t VehicleCtrlGetLockSt​(void);
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
+void Main_Contactor_On(void)
 
 
 #endif /* MOTOR_MOTOR_INCLUDE_VEHICLECTRL_H_ */

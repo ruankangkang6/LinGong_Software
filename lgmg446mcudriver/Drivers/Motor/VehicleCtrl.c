@@ -2567,3 +2567,36 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
      }
 
 }
+
+
+void Main_Contactor_On(void)
+{
+    if(Ctrl_Vin>=80)	//40%
+    {
+        RLY_pwm_duty = 40;
+    }
+    else if(Ctrl_Vin>=70)	//30%
+    {
+        RLY_pwm_duty = 30;
+    }
+    else if(Ctrl_Vin>=60)	//20%
+    {
+        RLY_pwm_duty = 20;
+    }
+    else if(Ctrl_Vin>=50)	//10%
+    {
+        RLY_pwm_duty = 10;
+    }
+    else
+    {
+        RLY_pwm_duty = 0;
+    }
+
+}
+
+void Main_Contactor_Off(void)
+{
+        RLY_pwm_duty = 0;  //考虑是否关闭pwm
+}
+
+
