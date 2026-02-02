@@ -1,0 +1,13 @@
+../Core/APP/CAN/uds.c:276:6:UDS_TransmitUdsData.part.0	0	static,ignoring_inline_asm
+../Core/APP/CAN/uds.c:50:8:UDS_Crc32CheckSum	4	static
+../Core/APP/CAN/uds.c:61:6:UDS_UdsService0x10	16	static
+../Core/APP/CAN/uds.c:103:6:UDS_UdsService0x22	0	static
+../Core/APP/CAN/uds.c:122:6:UDS_UdsService0x27	8	static
+../Core/APP/CAN/uds.c:176:6:UDS_UdsService0x3E	0	static
+../Core/APP/CAN/uds.c:185:6:UDS_UdsService0x28	0	static
+../Core/APP/CAN/uds.c:212:6:UDS_UdsService0x85	0	static
+../Core/APP/CAN/uds.c:238:6:UDS_UdsServiceAnalysis	0	static
+../Core/APP/CAN/uds.c:276:6:UDS_TransmitUdsData	8	static
+../Core/APP/CAN/uds.c:307:6:UDS_Srv3ETimeOver	0	static
+../Core/APP/CAN/uds.c:321:6:UDS_InitTask	0	static
+../Core/APP/CAN/uds.c:330:6:UDS_MainTask	8	static

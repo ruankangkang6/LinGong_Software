@@ -1,0 +1,4 @@
+../Drivers/BSW/PWM.c:10:6:pwm_freq_set	0	static
+../Drivers/BSW/PWM.c:17:6:TIM_SetChannalCompare	0	static
+../Drivers/BSW/PWM.c:38:6:PWM_disable	8	static
+../Drivers/BSW/PWM.c:49:6:PWM_enable	8	static

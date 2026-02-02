@@ -1,0 +1,4 @@
+../Drivers/Motor/MotorMain.c:138:6:CalibratedOnRoadRunning	8	static
+../Drivers/Motor/MotorMain.c:41:6:GetSpdOrTorIdIqRef	24	static
+../Drivers/Motor/MotorMain.c:289:6:InitForMotorApp	48	static
+../Drivers/Motor/MotorMain.c:528:6:RunDataIntit	8	static

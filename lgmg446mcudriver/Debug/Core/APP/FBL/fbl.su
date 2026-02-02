@@ -1,0 +1,5 @@
+../Core/APP/FBL/fbl.c:15:6:FBL_ResetSystem	0	static
+../Core/APP/FBL/fbl.c:18:6:FBL_SetAppCanBaudRate	0	static
+../Core/APP/FBL/fbl.c:26:7:FBL_GetEcuAddress	0	static
+../Core/APP/FBL/fbl.c:45:6:FBL_InitTask	0	static
+../Core/APP/FBL/fbl.c:50:6:FBL_MainTask	0	static

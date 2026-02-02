@@ -1,0 +1,9 @@
+../Drivers/Motor/MotorVC.c:99:6:CalOutputPhase	16	static
+../Drivers/Motor/MotorVC.c:186:6:TransformCurrent	24	static
+../Drivers/Motor/MotorVC.c:217:6:VCCsrControlEx	72	static
+../Drivers/Motor/MotorVC.c:441:7:RoundArcAngle	0	static
+../Drivers/Motor/MotorVC.c:452:6:CalcCsrDecoupleVal	16	static
+../Drivers/Motor/MotorVC.c:579:6:CalcLineCurr	24	static
+../Drivers/Motor/MotorVC.c:599:6:CalcActTorque	24	static
+../Drivers/Motor/MotorVC.c:620:6:SelectAcrPar	0	static
+../Drivers/Motor/MotorVC.c:692:6:ResetCsrPar	4	static

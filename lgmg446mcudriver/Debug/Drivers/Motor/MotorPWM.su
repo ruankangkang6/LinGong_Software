@@ -1,0 +1,6 @@
+../Drivers/Motor/MotorPWM.c:68:6:SVPWM_Modulate_S7	64	static
+../Drivers/Motor/MotorPWM.c:243:6:OverModulate	0	static
+../Drivers/Motor/MotorPWM.c:271:6:SendPWM	24	static
+../Drivers/Motor/MotorPWM.c:32:6:OutPutPWMVF	8	static
+../Drivers/Motor/MotorPWM.c:341:6:EnableDrive	8	static
+../Drivers/Motor/MotorPWM.c:348:6:DisableDrive	8	static

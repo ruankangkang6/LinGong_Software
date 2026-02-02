@@ -166,8 +166,8 @@ void ParGetFromFunction(void)
         gLimitParams.speedPLimit         =   450;//parameter[SPEEDPLIMIT];//180;//0.1f*gCommProVar.SpeedPLimit;         //瓒呴€熶繚鎶ょ偣姝ｈ浆
         gLimitParams.speedNLimit         =   450;//parameter[SPEEDNLIMIT];//180;//0.1f*gCommProVar.SpeedNLimit;         //瓒呴€熶繚鎶ょ偣鍙嶈浆
 
-        gLimitParams.OcpInstLimit        =   750;//parameter[OCPINSTLIMIT];//350;//0.1f*gCommProVar.OcpInstLimit;        //鐬椂杩囨祦鐐?
-        gLimitParams.OcpFilterLimit      =   750;//parameter[OCPFILTERLIMIT];//350;//0.1f*gCommProVar.OcpFilterLimit;      //婊ゆ尝杩囨祦鐐?
+        gLimitParams.OcpInstLimit        =   930;//parameter[OCPINSTLIMIT];//350;//0.1f*gCommProVar.OcpInstLimit;        //鐬椂杩囨祦鐐?
+        gLimitParams.OcpFilterLimit      =   930;//parameter[OCPFILTERLIMIT];//350;//0.1f*gCommProVar.OcpFilterLimit;      //婊ゆ尝杩囨祦鐐?
 
         gLimitParams.LowVoltUnderVol     =   0;//gCommProVar.LowVoltUnderVol;          //浣庡帇娆犲帇淇濇姢闃堝€?
         gLimitParams.LowVoltOverVol      =   0;//gCommProVar.LowVoltOverVol;           //浣庡帇杩囧帇淇濇姢闃堝€?

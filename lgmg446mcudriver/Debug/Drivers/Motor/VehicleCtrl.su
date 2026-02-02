@@ -1,0 +1,10 @@
+../Drivers/Motor/VehicleCtrl.c:281:6:VehicleCtrlInit	24	static
+../Drivers/Motor/VehicleCtrl.c:601:6:VehicleDataDeal	24	static
+../Drivers/Motor/VehicleCtrl.c:709:6:GetVehicleInformation	104	static
+../Drivers/Motor/VehicleCtrl.c:2026:6:ForkLiftRunDeal	56	static
+../Drivers/Motor/VehicleCtrl.c:2216:6:ForkLiftHourCnt	8	static
+../Drivers/Motor/VehicleCtrl.c:2245:9:VehicleTboxGPSID_MatchSt	0	static
+../Drivers/Motor/VehicleCtrl.c:2260:6:VehicleCtrlTboxBind​	40	static
+../Drivers/Motor/VehicleCtrl.c:2531:6:VehicleCtrlTboxMsg_Updata​	8	static
+../Drivers/Motor/VehicleCtrl.c:2549:9:VehicleCtrlGetLockSt​	0	static
+../Drivers/Motor/VehicleCtrl.c:2554:6:HAL_TIM_PeriodElapsedCallback	0	static

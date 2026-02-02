@@ -1,0 +1,12 @@
+../Drivers/BSW/can2_cfg.c:148:6:CarDriveUpgrade_UnPackage	1
+../Drivers/BSW/can2_cfg.c:159:6:CarPumpUpgrade_UnPackage	1
+../Drivers/BSW/can2_cfg.c:48:6:MsgReadPrmRegister	2
+../Drivers/BSW/can2_cfg.c:75:6:MsgWritePrmRegister	1
+../Drivers/BSW/can2_cfg.c:97:6:MsgWriteEepromCmd	4
+../Drivers/BSW/can2_cfg.c:137:7:CAN2_GetUpgradeStat	2
+../Drivers/BSW/can2_cfg.c:181:6:CAN2_Rx_Msg_Init	4
+../Drivers/BSW/can2_cfg.c:229:6:Can2_Rx_Process	26
+../Drivers/BSW/can2_cfg.c:265:6:CAN2_Tx_Msg_Init	2
+../Drivers/BSW/can2_cfg.c:281:6:Can2_Tx_Message	2
+../Drivers/BSW/can2_cfg.c:323:6:CAN2_Fifo0_Full_IRQHandler	9
+../Drivers/BSW/can2_cfg.c:369:6:CAN2_Fifo1_Full_IRQHandler	9

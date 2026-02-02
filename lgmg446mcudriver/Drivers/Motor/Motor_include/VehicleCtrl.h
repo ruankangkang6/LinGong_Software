@@ -27,6 +27,8 @@
 #define ACC_enable			(HAL_GPIO_ReadPin(DI_11_MCU_GPIO_Port,DI_11_MCU_Pin))           //油门数字量信号
 #define GearR_Enable		(HAL_GPIO_ReadPin(DI_13_MCU_GPIO_Port,DI_13_MCU_Pin))           //R档信号
 
+#define RLY_PWM_PERIOD 100      // 100 step = 1ms  tim6 interrupt gennerate pwm
+
 typedef struct VEHICLE_CANCTRL
 {
 	uint16_t TractionSpeed;     //牵引最大转速
@@ -112,5 +114,8 @@ void VehicleCtrlTboxMsg_Updata​(uint8_t* Msg_data);
 void VehicleCtrlTboxBind​(void);
 
 uint8_t VehicleCtrlGetLockSt​(void);
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
+
 
 #endif /* MOTOR_MOTOR_INCLUDE_VEHICLECTRL_H_ */

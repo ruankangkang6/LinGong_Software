@@ -1,0 +1,2 @@
+../Drivers/BSW/Interrupt.c:9:6:ADC_ISR	16	static
+../Drivers/BSW/Interrupt.c:76:6:Main2msMotor	24	static

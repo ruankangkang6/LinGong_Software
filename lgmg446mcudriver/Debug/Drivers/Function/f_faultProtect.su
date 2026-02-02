@@ -1,0 +1,9 @@
+../Drivers/Function/f_faultProtect.c:22:6:TemperatureProtect	32	static
+../Drivers/Function/f_faultProtect.c:186:6:StallProtect	16	static
+../Drivers/Function/f_faultProtect.c:334:6:SenLowFaultCheck	4	static
+../Drivers/Function/f_faultProtect.c:485:6:CalcADOffset	8	static
+../Drivers/Function/f_faultProtect.c:552:6:RTCheck	8	static
+../Drivers/Function/f_faultProtect.c:597:6:ImmSoftWareErrorDeal	16	static
+../Drivers/Function/f_faultProtect.c:712:6:HardWareOCDeal	8	static
+../Drivers/Function/f_faultProtect.c:719:7:MaxUVWCurrent	0	static
+../Drivers/Function/f_faultProtect.c:755:6:SoftWareErrorDeal	16	static

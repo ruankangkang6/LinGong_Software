@@ -162,7 +162,12 @@ int main(void)
    HAL_TIM_Base_Start(&htim1);
    HAL_TIM_Base_Start(&htim8);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+
+
+   HAL_NVIC_SetPriority(TIM6_DAC_IRQn, 0, 0);  // 设置优先级
+   HAL_NVIC_EnableIRQ(TIM6_DAC_IRQn);  // 使能中断
    HAL_TIM_Base_Start_IT(&htim6);
+
    /* Clear FIFO0 Overrun Flag */
    __HAL_CAN_CLEAR_FLAG(&hcan1, CAN_FLAG_FOV0);
    /* Clear FIFO 0 full Flag */
@@ -808,9 +813,9 @@ static void MX_TIM6_Init(void)
 
   /* USER CODE END TIM6_Init 1 */
   htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 9;
+  htim6.Init.Prescaler = 179;  //9   180Mhz / 180 = 1Mhz
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim6.Init.Period = 8999;
+  htim6.Init.Period = 9;      //8999  10us
   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
   {
@@ -917,8 +922,14 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOB, Charge_CTR_Pin|M1_PWM_EN_Pin|RDC1_CS_Pin|RDC1_RST_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : DI_1_MCU_Pin DI_3_MCU_Pin DI_5_MCU_Pin CAN_ID_Pin */
-  GPIO_InitStruct.Pin = DI_1_MCU_Pin|DI_3_MCU_Pin|DI_5_MCU_Pin|CAN_ID_Pin;
+  GPIO_InitStruct.Pin = DI_3_MCU_Pin|DI_5_MCU_Pin|CAN_ID_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : DI_1_MCU_Pin */
+  GPIO_InitStruct.Pin = DI_1_MCU_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 

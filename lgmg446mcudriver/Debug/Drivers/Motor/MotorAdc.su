@@ -1,0 +1,2 @@
+../Drivers/Motor/MotorAdc.c:45:6:GetAdcResult	40	static
+../Drivers/Motor/MotorAdc.c:183:6:ADCProcess	0	static

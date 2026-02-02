@@ -1,0 +1,3 @@
+../Drivers/Motor/MotorRotorPos.c:27:6:RotorTransReadPos	8
+../Drivers/Motor/MotorRotorPos.c:95:6:RotorTransSamplePos	3
+../Drivers/Motor/MotorRotorPos.c:123:6:RotorTransCalVel	7

@@ -1,0 +1,2 @@
+../Drivers/Motor/MotorAdc.c:45:6:GetAdcResult	4
+../Drivers/Motor/MotorAdc.c:183:6:ADCProcess	1

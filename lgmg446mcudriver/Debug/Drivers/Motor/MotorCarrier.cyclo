@@ -1,0 +1,2 @@
+../Drivers/Motor/MotorCarrier.c:27:6:CalCarrierWaveFreq	11
+../Drivers/Motor/MotorCarrier.c:138:6:AsynPWMAngleCal	2

@@ -1,0 +1,5 @@
+../Core/BSP/can.c:13:7:CAN_TransmitMessage	56	static
+../Core/BSP/can.c:50:7:CAN_Can1SendMessage	56	static
+../Core/BSP/can.c:55:7:CAN_Can2SendMessage	56	static
+../Core/BSP/can.c:59:6:CAN_Can1ReadFifo0Message	8	static
+../Core/BSP/can.c:74:6:CAN_Can2ReadFifo1Message	8	static

@@ -1,0 +1,6 @@
+../Drivers/BSW/f_mcuctrl.c:34:6:CarJRMcuCmd1Deal	6
+../Drivers/BSW/f_mcuctrl.c:127:6:CarJRMcuCmd2Deal	2
+../Drivers/BSW/f_mcuctrl.c:153:6:CarJRMcuInfo1Update	1
+../Drivers/BSW/f_mcuctrl.c:189:6:CarJRMcuInfo2Update	1
+../Drivers/BSW/f_mcuctrl.c:223:6:CarJRMcuInfo3Update	1
+../Drivers/BSW/f_mcuctrl.c:240:6:CarJRMcuInfo4Update	1

@@ -1,0 +1,13 @@
+../Drivers/BSW/PrmMgr.c:36:6:parameter_init	36	static
+../Drivers/BSW/PrmMgr.c:124:6:parameter_update	40	static
+../Drivers/BSW/PrmMgr.c:213:9:GetPrmEepromAddress	0	static
+../Drivers/BSW/PrmMgr.c:221:9:GetPrmRamAddress	0	static
+../Drivers/BSW/PrmMgr.c:235:7:GetMonitorValue	0	static
+../Drivers/BSW/PrmMgr.c:453:8:GetPrmValue	0	static
+../Drivers/BSW/PrmMgr.c:631:9:NvmReadInt32	0	static
+../Drivers/BSW/PrmMgr.c:636:9:SetPrmDefaultValue	24	static
+../Drivers/BSW/PrmMgr.c:645:6:NvmReadAllData	24	static
+../Drivers/BSW/PrmMgr.c:682:8:SetPrmValue	0	static
+../Drivers/BSW/PrmMgr.c:742:8:GetTotalFuncNum	0	static
+../Drivers/BSW/PrmMgr.c:749:6:InitAllEepData	0	static
+../Drivers/BSW/PrmMgr.c:754:6:SaveAllPrmDefaultToNvm	40	static

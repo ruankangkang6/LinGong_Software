@@ -1,0 +1,4 @@
+../Drivers/BSW/PWM.c:10:6:pwm_freq_set	1
+../Drivers/BSW/PWM.c:17:6:TIM_SetChannalCompare	4
+../Drivers/BSW/PWM.c:38:6:PWM_disable	1
+../Drivers/BSW/PWM.c:49:6:PWM_enable	1

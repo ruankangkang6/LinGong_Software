@@ -1,0 +1,2 @@
+../Drivers/Function/f_torqueComp.c:17:6:CalcCompTorque	24	static
+../Drivers/Function/f_torqueComp.c:67:6:InitTRefComp	0	static

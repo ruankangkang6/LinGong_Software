@@ -260,6 +260,10 @@ uint8_t TboxBind_GPSID_Rflag = 0;
 uint32_t TboxBind_st = 0;
 uint32_t TboxBind_st_Stor = 0;
 
+//******Main contactor PWM control parameter******//
+static uint8_t RLY_pwm_cnt = 0;
+uint8_t RLY_pwm_duty = 0;    // 0~20 → 0~100%
+
 union{ 
     struct
     {
@@ -900,6 +904,7 @@ void GetVehicleInformation(void)
 	{
 		Meter_access = 0;  //不检测刷卡
 	}
+
 
 
 	//下降电池阀控制 (油泵)
@@ -2544,4 +2549,21 @@ void VehicleCtrlTboxMsg_Updata​(uint8_t* Msg_data)
 uint8_t VehicleCtrlGetLockSt​(void)
 {
     return TboxLock_Level_Action_st;
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+     if (htim->Instance == TIM6)
+     {
+       RLY_pwm_cnt++;
+       if (RLY_pwm_cnt >= RLY_PWM_PERIOD)
+       RLY_pwm_cnt = 0;
+       
+       if (RLY_pwm_cnt < RLY_pwm_duty)
+            HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+       else
+            HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+
+     }
+
 }

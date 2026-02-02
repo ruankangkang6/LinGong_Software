@@ -1,0 +1,2 @@
+../Drivers/Motor/MotorCarrier.c:27:6:CalCarrierWaveFreq	16	static
+../Drivers/Motor/MotorCarrier.c:138:6:AsynPWMAngleCal	4	static

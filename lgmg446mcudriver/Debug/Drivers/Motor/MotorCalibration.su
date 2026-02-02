@@ -1,0 +1,17 @@
+../Drivers/Motor/MotorCalibration.c:70:6:interp2	0	static
+../Drivers/Motor/MotorCalibration.c:97:6:CalcTorqueIndex	0	static
+../Drivers/Motor/MotorCalibration.c:129:6:GetIdqRefBoundary	16	static
+../Drivers/Motor/MotorCalibration.c:224:7:GetTorqueOnGrid	0	static
+../Drivers/Motor/MotorCalibration.c:229:7:GetIdOnGrid	4	static
+../Drivers/Motor/MotorCalibration.c:257:7:GetIqOnGrid	4	static
+../Drivers/Motor/MotorCalibration.c:286:6:GetInterpValueEx	56	static
+../Drivers/Motor/MotorCalibration.c:375:7:CalcMaxTorque	12	static
+../Drivers/Motor/MotorCalibration.c:420:6:GetCalibIdqValEx	96	static
+../Drivers/Motor/MotorCalibration.c:480:6:GetCalibIdqRef	72	static
+../Drivers/Motor/MotorCalibration.c:552:6:CalcMaxTorqueRange	32	static
+../Drivers/Motor/MotorCalibration.c:611:6:BuildIdqTable	32	static
+../Drivers/Motor/MotorCalibration.c:728:7:GetTorqueOnSpeed	8	static
+../Drivers/Motor/MotorCalibration.c:852:7:GetTorqueOnSpeedEx	8	static
+../Drivers/Motor/MotorCalibration.c:975:7:GetCalibTorqueProc	8	static
+../Drivers/Motor/MotorCalibration.c:1018:7:GetCalibTorqueProcEx	8	static
+../Drivers/Motor/MotorCalibration.c:1070:7:GetCalibTorque	40	static

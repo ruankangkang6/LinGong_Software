@@ -1,0 +1,2 @@
+../Drivers/Function/f_torqueComp.c:17:6:CalcCompTorque	5
+../Drivers/Function/f_torqueComp.c:67:6:InitTRefComp	1

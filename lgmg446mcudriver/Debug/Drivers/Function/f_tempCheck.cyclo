@@ -1,0 +1,2 @@
+../Drivers/Function/f_tempCheck.c:193:14:TemperatureSearch1.part.0.constprop	8
+../Drivers/Function/f_tempCheck.c:152:6:TemperatureCheck	12

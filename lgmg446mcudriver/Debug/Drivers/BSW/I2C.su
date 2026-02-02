@@ -1,0 +1,2 @@
+../Drivers/BSW/I2C.c:7:10:I2CReadInt32WaitMode	56	static
+../Drivers/BSW/I2C.c:37:10:I2CWriteInt32WaitMode	56	static

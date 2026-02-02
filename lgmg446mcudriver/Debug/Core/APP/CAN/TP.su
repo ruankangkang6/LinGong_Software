@@ -1,0 +1,10 @@
+../Core/APP/CAN/TP.c:9:6:TP_SingleFrameAnalysis	8	static
+../Core/APP/CAN/TP.c:21:6:TP_FirstFrameAnalysis	0	static
+../Core/APP/CAN/TP.c:37:6:TP_ConsecutiveFrameAnalysis	12	static
+../Core/APP/CAN/TP.c:66:6:TP_FlowControlSend	0	static
+../Core/APP/CAN/TP.c:76:6:TP_Can1ReceiveMessageHandler	16	static
+../Core/APP/CAN/TP.c:114:6:TP_Can2ReceiveMessageHandler	16	static
+../Core/APP/CAN/TP.c:152:6:TP_Can1TransmitData	16	static
+../Core/APP/CAN/TP.c:175:6:TP_Can2TransmitData	16	static
+../Core/APP/CAN/TP.c:199:6:TP_InitTask	0	static
+../Core/APP/CAN/TP.c:203:6:TP_MainTask	8	static

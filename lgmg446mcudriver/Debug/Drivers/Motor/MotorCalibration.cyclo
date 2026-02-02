@@ -1,0 +1,17 @@
+../Drivers/Motor/MotorCalibration.c:70:6:interp2	3
+../Drivers/Motor/MotorCalibration.c:97:6:CalcTorqueIndex	5
+../Drivers/Motor/MotorCalibration.c:129:6:GetIdqRefBoundary	22
+../Drivers/Motor/MotorCalibration.c:224:7:GetTorqueOnGrid	1
+../Drivers/Motor/MotorCalibration.c:229:7:GetIdOnGrid	3
+../Drivers/Motor/MotorCalibration.c:257:7:GetIqOnGrid	3
+../Drivers/Motor/MotorCalibration.c:286:6:GetInterpValueEx	10
+../Drivers/Motor/MotorCalibration.c:375:7:CalcMaxTorque	10
+../Drivers/Motor/MotorCalibration.c:420:6:GetCalibIdqValEx	13
+../Drivers/Motor/MotorCalibration.c:480:6:GetCalibIdqRef	3
+../Drivers/Motor/MotorCalibration.c:552:6:CalcMaxTorqueRange	4
+../Drivers/Motor/MotorCalibration.c:611:6:BuildIdqTable	25
+../Drivers/Motor/MotorCalibration.c:728:7:GetTorqueOnSpeed	91
+../Drivers/Motor/MotorCalibration.c:852:7:GetTorqueOnSpeedEx	91
+../Drivers/Motor/MotorCalibration.c:975:7:GetCalibTorqueProc	12
+../Drivers/Motor/MotorCalibration.c:1018:7:GetCalibTorqueProcEx	13
+../Drivers/Motor/MotorCalibration.c:1070:7:GetCalibTorque	3

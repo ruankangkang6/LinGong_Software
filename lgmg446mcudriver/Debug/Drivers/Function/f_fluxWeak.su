@@ -1,0 +1,4 @@
+../Drivers/Function/f_fluxWeak.c:34:6:PMFwInit	4	static
+../Drivers/Function/f_fluxWeak.c:60:6:PMMaxTorqCtrl	40	static
+../Drivers/Function/f_fluxWeak.c:89:6:PMFluxWeakDealEx	56	static
+../Drivers/Function/f_fluxWeak.c:250:6:PMSetFwPara1	0	static

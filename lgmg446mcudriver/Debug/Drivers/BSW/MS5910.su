@@ -1,0 +1,10 @@
+../Drivers/BSW/MS5910.c:42:6:MS5910_ClrFaultReg	32	static
+../Drivers/BSW/MS5910.c:57:6:MS5910_RDPos	48	static
+../Drivers/BSW/MS5910.c:71:6:MS5910_RDFLT	40	static
+../Drivers/BSW/MS5910.c:78:6:MS5910_RESET	16	static
+../Drivers/BSW/MS5910.c:88:6:MS5910_REFAULT	32	static
+../Drivers/BSW/MS5910.c:101:9:MS5910_READ	32	static
+../Drivers/BSW/MS5910.c:122:6:MS5910_WRITE	32	static
+../Drivers/BSW/MS5910.c:5:6:MS5910_Init	32	static
+../Drivers/BSW/MS5910.c:139:6:delay_us	8	static
+../Drivers/BSW/MS5910.c:168:6:delay_ms	8	static
