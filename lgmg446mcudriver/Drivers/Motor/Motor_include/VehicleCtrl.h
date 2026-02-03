@@ -27,7 +27,7 @@
 #define ACC_enable			(HAL_GPIO_ReadPin(DI_11_MCU_GPIO_Port,DI_11_MCU_Pin))           //油门数字量信号
 #define GearR_Enable		(HAL_GPIO_ReadPin(DI_13_MCU_GPIO_Port,DI_13_MCU_Pin))           //R档信号
 
-#define RLY_PWM_PERIOD 100      // 100 step = 1ms  tim6 interrupt gennerate pwm
+#define RLY_PWM_PERIOD 100      // 100 step =  100*1us = 1ms (tim6 interrupt gennerate pwm)
 
 typedef struct VEHICLE_CANCTRL
 {
@@ -117,6 +117,7 @@ uint8_t VehicleCtrlGetLockSt​(void);
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
 void Main_Contactor_On(void)
+void Main_Contactor_Off(void)
 
 
 #endif /* MOTOR_MOTOR_INCLUDE_VEHICLECTRL_H_ */

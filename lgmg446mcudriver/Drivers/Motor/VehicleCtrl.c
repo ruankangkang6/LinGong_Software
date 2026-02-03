@@ -751,7 +751,7 @@ void GetVehicleInformation(void)
         /*---------------主接触器吸合判断--------------*/
         if (gFault3rd.bit.HwOverCurrent == 1 || gUDC.uDCBigFilter < 50)
         {
-            MAIN_CONTACTOR_OFF;
+            Main_Contactor_Off();//MAIN_CONTACTOR_OFF;
             MainContactorStatus = 0;
         }
         else
@@ -774,7 +774,7 @@ void GetVehicleInformation(void)
                     KeyOn_Enable = 1;
                     Poweron_cnt = 350;
 
-    				MAIN_CONTACTOR_ON;  //主接触器吸合
+    				Main_Contactor_On(); //MAIN_CONTACTOR_ON;  //主接触器吸合
     				MainContactorStatus = 1;
                 }
 
@@ -808,7 +808,7 @@ void GetVehicleInformation(void)
     		{
     			if(gFault3rd.bit.SwOverUdc == 0)
     			{
-    				MAIN_CONTACTOR_OFF;
+    				Main_Contactor_Off();//MAIN_CONTACTOR_OFF;
     				MainContactorStatus = 0;
     			}
 
@@ -906,7 +906,49 @@ void GetVehicleInformation(void)
 	}
 
 
+    
+    //电流采集开后50us后 判断是否过流 过流则置高RLY
+    static uint16_t u16AdcResult7_MainRelay_Cur_old = 0;
+    static uint32_t MRLY_TimeBak = 0; // 保存上一次延时计时
+    uint32_t MRLY_Time;
+    uint32_t MRLY_Deta_Time;
+    MRLY_Time = SysTick->VAL;
+    if(u16AdcResult7_MainRelay_Cur_old < CUR_TH && u16AdcResult7_MainRelay_Cur >= CUR_TH)
+    {
+        if (MRLY_TimeBak != 0)
+        {
+            if (MRLY_TimeBak > MRLY_Time)
+            {
+                MRLY_Deta_Time = MRLY_TimeBak - MRLY_Time;
+            }
+            else
+            {
+                MRLY_Deta_Time = SysTick->LOAD - MRLY_Time + MRLY_TimeBak;
+            }
 
+            if (MRLY_Deta_Time >= 9000)   // 50us @180MHz
+            {
+                MRLY_TimeBak = MRLY_Time;
+
+                //Relay coil overcurrent. Switch on high relay.
+                if(u16AdcResult7_MainRelay_Cur >= 3723)
+                {
+                  Main_Contactor_On();
+                }
+                
+            }
+        }
+        else
+        {
+            MRLY_TimeBak = MRLY_Time;   // 第一次初始化
+        }
+
+    }
+    u16AdcResult7_MainRelay_Cur_old = u16AdcResult7_MainRelay_Cur;
+
+
+
+#if(0)
 	//下降电池阀控制 (油泵)
 	if (1)//(KeyOn_Enable == 1) && (Meter_access == 0))
 	{
@@ -951,6 +993,7 @@ void GetVehicleInformation(void)
 	{
 		LastSeatSignal2 = PumpSeat_enable;
 	}
+#endif
 
 
 	//加速踏板百分比计算
@@ -2551,6 +2594,7 @@ uint8_t VehicleCtrlGetLockSt​(void)
     return TboxLock_Level_Action_st;
 }
 
+//PWM control of the main contactor
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
      if (htim->Instance == TIM6)
@@ -2567,6 +2611,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
      }
 
 }
+
 
 
 void Main_Contactor_On(void)
@@ -2587,7 +2632,11 @@ void Main_Contactor_On(void)
     {
         RLY_pwm_duty = 10;
     }
-    else
+    else if(Ctrl_Vin>=40)	//5%
+    {
+        RLY_pwm_duty = 5;
+    }
+    else 	                //0%
     {
         RLY_pwm_duty = 0;
     }
